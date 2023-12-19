@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Sign up / Login Form</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+	<div class="main">  	
+		<input type="checkbox" id="chk" aria-hidden="true">
+
+			<div class="signup">
+				<form>
+					<label for="chk" aria-hidden="true">Register</label>
+					<input type="text" name="username" placeholder="Username" id="a" oninput="user()" required>
+                    <span style="color: rgb(240, 141, 141);" id="error1"></span>
+                    <input type="password" name="password" placeholder="Password" id="b" oninput="pass()" required>
+                    <span style="color: rgb(240, 141, 141);" id="error2"></span>
+                    <input type="password" name="password" placeholder="Re-enter Password" id="d" oninput="repassword()" required>
+                    <span style="color: rgb(240, 141, 141);" id="error4"></span>
+                    <input type="email" name="email" placeholder="Email" id="c" oninput="mail()" required>
+                    <span style="color: rgb(240, 141, 141);" id="error3"></span>
+                    <button class="opacity">Sign Up</button><br>
+				</form>
+			</div>
+
+			<div class="login">
+				<form>
+					<label for="chk" aria-hidden="true">Login</label>
+					<input type="email" name="email" placeholder="Email" required="">
+					<input type="password" name="pswd" placeholder="Password" required="">
+					<button>Login</button>
+				</form>
+			</div>
+	</div>
+    <script src="register.js"></script>
+</body>
+</html>
